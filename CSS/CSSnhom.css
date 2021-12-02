@@ -38,9 +38,17 @@ header{
     position: fixed;
 
 }
+
+.logo1{
+    float: left;
+}
+.logo1 img{
+    width: 50px; height: 50px;
+}
+
 .bieutuong{
     float: right;
-    padding-left: 10px ;
+    padding: 10px 0 0 10px;
     font-size: 25px;
     color: #ffffff;
 }
@@ -51,13 +59,14 @@ header{
 }
 li{
     float: left;
-    padding-right: 20px;
+    padding-right: 15px;
     list-style: none;
-    font-size: 18px;
+    font-size: 17px;
+    padding-top: 20px;
 }
 li a{
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
 }
 .logo li:hover{
     transform: scale(1.08);
