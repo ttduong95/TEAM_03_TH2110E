@@ -86,14 +86,18 @@ li a{
 .TV li{
     float: none;
 }
-.blog {
-    width: 900px;
-    height:3250px;
-    margin:100px 155px;
-    padding: 10px 10px;
-    background: #a4d93c;
-    color: #ffffff;
-    border-radius: 15px;
+.entry{
+    float:left;
+    width: 66.67%;
+    padding-right: 15px;
+}
+.entry .blog{
+                 float:left;
+                 width: 100%;
+                 padding:30px;
+                 background: #a4d93c;
+                 color: #ffffff;
+                 border-radius: 15px;
 }
 #tieude{
     line-height: 2;
@@ -110,25 +114,38 @@ h2{
 #tieude1{
     text-decoration: underline;
 }
-.anh1{
-    padding-left: 20%;
-}
-.lienquan{
-    width:300px;
-    height:3250px;
-    margin:100px 155px;
-    padding: 10px 10px;
-    float: right;
-    background: #a4d93c;
-    color: #ffffff;
-    border-radius: 15px;
-    position:absolute;
-    top: 0px;
-    right:5px;
-    z-index: 1;
-}
 .tintuc:hover{
     transition: all 200ms;
     transform: scale(1.05);
 }
 .link1:hover{color:blue;}
+.sidebar{
+    float: left;
+    padding-left: 15px;
+    width:33.33%;
+    background: #a4d93c;
+    color: #ffffff;
+    border-radius: 15px;
+    z-index: 1;
+}
+.container1{
+    float: none;
+    width: 1000px;
+    margin: 0 auto;
+}
+.sidebar .tieude2{
+        float: left;
+        width: 100%;
+        padding: 15px;
+}
+.sidebar .tintuc{
+    float: left;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+.main{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
