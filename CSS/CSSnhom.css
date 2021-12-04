@@ -13,6 +13,7 @@ body{
     line-break: 1.5;
     background-image: url("../IMG/rau5.jpg");
     background-size: cover;
+
 }
 p{
     margin-bottom: 10px;
@@ -27,16 +28,15 @@ a{
     float: left;
 }
 .container{ /* kích thước chung của khối */
-                                   margin: 0 auto;
-                                   width: 1000px;
-                                   float: none;
-                               }
+    margin: 0 auto;
+    width: 1200px;
+    float: none;
+}
 
 header{
-    background-color: lightgreen;
-    padding: 10px ;
+    background-color: #50d250;
+    padding-top: 5px;
     position: fixed;
-    margin-top: 20px;
 
 }
 
@@ -44,12 +44,12 @@ header{
     float: left;
 }
 .logo img{
-    width: 50px; height: 50px;
+    width: 70px; height: 70px;
 }
 
 .bieutuong{
     float: right;
-    padding: 10px 0 0 10px;
+    padding: 15px 0 0 10px;
     font-size: 25px;
     color: #ffffff;
 }
@@ -63,7 +63,7 @@ li{
     padding-right: 15px;
     list-style: none;
     font-size: 17px;
-    padding-top: 20px;
+    padding-top: 24px;
 }
 li a{
     color: #ffffff;
@@ -80,7 +80,7 @@ img{
     margin: 0 auto;
     width: 1200px;
     float: none;
-    padding: 74px 0 0;
+    padding: 77px 0 0;
     overflow: hidden;
 }
 .img{
@@ -96,7 +96,7 @@ img{
     width: 1000px; height: 360px;
     float: none;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.65);
     border-radius: 5px;
 }
 .content{ /* điều chỉnh các khung ảnh bên trong*/
@@ -162,6 +162,7 @@ h1{ /* chỉnh kích thước của tiêu đề màu chữ và phông*/
 .TV li{
     float: none;
 }
+.
 
 
 
