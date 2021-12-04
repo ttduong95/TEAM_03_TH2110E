@@ -27,15 +27,16 @@ a{
     float: left;
 }
 .container{ /* kích thước chung của khối */
-    margin: 0 auto;
-    width: 1000px;
-    float: none;
-}
+                                   margin: 0 auto;
+                                   width: 1000px;
+                                   float: none;
+                               }
 
 header{
-    background-color: rgba(18, 234, 35, 0.79);
+    background-color: lightgreen;
     padding: 10px ;
     position: fixed;
+    margin-top: 20px;
 
 }
 
