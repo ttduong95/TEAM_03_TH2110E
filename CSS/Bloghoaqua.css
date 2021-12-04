@@ -13,6 +13,7 @@ body{
     line-break: 1.5;
     background-image: url("../IMG/rau5.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 p{
     margin-bottom: 10px;
@@ -85,7 +86,7 @@ img{
 .container2{
     margin: 0 auto;
     width: 1000px;
-    height: 5000px;
+    height: 9300px;
     float: none;
     padding: 20px 180px;
     background-color: rgba(255, 255, 255);
@@ -125,4 +126,8 @@ h1{
 .id1{
     font-weight: 700;
     font-size: 25px;
+}
+.td1{
+    font-weight: 700;
+    font-size: 20px;
 }
