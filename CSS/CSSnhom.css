@@ -80,22 +80,32 @@ img{
     margin: 0 auto;
     width: 1200px;
     float: none;
-    padding: 77px 0 0;
+    padding: 80px 0 0;
     overflow: hidden;
 }
-.img{
-    border-radius: 15px;
-}
+
 .img1{ /* điều chỉnh ảnh hompage thứ 2 có khung bằng ảnh 1(container1 = 1200) nhưng độ rộng bằng với độ rộng của container=1000, nên sẽ padding trái phải vào 100( 1200-200=1000)*/
     padding: 10px 100px 20px;
     background-color: rgba(18, 234, 35, 0.35);
     border-radius: 10px;
 }
+.img3{
+    padding: 10px;
+}
 .container2{ /* đặt cho bằng kích thước  của khung lúc đầu cho các phần thẳng hàng*/
     margin: 0 auto;
-    width: 1000px; height: 360px;
+    width: 1000px; height: 1500px;
     float: none;
-    padding: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.container3{ /* đặt cho bằng kích thước  của khung lúc đầu cho các phần thẳng hàng*/
+    margin: 10px auto;
+    width: 1000px; height: 1000px;
+    float: none;
+    padding: 30px;
     background-color: rgba(255, 255, 255, 0.65);
     border-radius: 5px;
 }
@@ -140,10 +150,15 @@ img{
 
 }
 h1{ /* chỉnh kích thước của tiêu đề màu chữ và phông*/
-    width: 20%;
-    padding: 10px 9px;
+    width: 23%;
+    padding: 20px 9px;
     background-color: rgba(18, 234, 35, 0.7);
     color: #ffffff;
+}
+h1 a{
+    font-weight: 800;
+    color: white;
+    font-size: 20px;
 }
 .end{
     margin: 10px auto;
@@ -162,7 +177,11 @@ h1{ /* chỉnh kích thước của tiêu đề màu chữ và phông*/
 .TV li{
     float: none;
 }
-.
+.anh1{
+    float: none;
+    padding: 10px;
+}
+
 
 
 
