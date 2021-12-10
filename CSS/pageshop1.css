@@ -127,8 +127,6 @@ img{
 .content a:hover{
     color: white;
     transition: all 400ms;
-    font-size: 22px;
-
 }
 .img2:hover{ /* hiệu ứng ảnh*/
     transform: scale(1.10);
