@@ -10,9 +10,10 @@ body{
     color: #222222;
     font-weight: 500;
     text-align: left;
-    line-break: 1.5;
+    line-break: auto;
     background-image: url("../IMG/rau5.jpg");
     background-size: cover;
+    background-attachment: fixed;
 
 }
 p{
@@ -60,14 +61,14 @@ header{
 }
 li{
     float: left;
-    padding-right: 15px;
+    padding-right: 25px;
     list-style: none;
     font-size: 17px;
     padding-top: 24px;
 }
 li a{
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 800;
 }
 .logo2 li:hover{
     transform: scale(1.08);
@@ -80,24 +81,35 @@ img{
     margin: 0 auto;
     width: 1200px;
     float: none;
-    padding: 77px 0 0;
+    padding: 80px 0 0;
     overflow: hidden;
 }
-.img{
-    border-radius: 15px;
-}
+
 .img1{ /* điều chỉnh ảnh hompage thứ 2 có khung bằng ảnh 1(container1 = 1200) nhưng độ rộng bằng với độ rộng của container=1000, nên sẽ padding trái phải vào 100( 1200-200=1000)*/
     padding: 10px 100px 20px;
     background-color: rgba(18, 234, 35, 0.35);
     border-radius: 10px;
 }
+.img3{
+    padding: 10px;
+}
 .container2{ /* đặt cho bằng kích thước  của khung lúc đầu cho các phần thẳng hàng*/
-    margin: 0 auto;
-    width: 1000px; height: 360px;
+    margin: 5px auto;
+    width: 1000px; height: 1500px;
     float: none;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.65);
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
+    box-sizing: border-box;
+}
+.container3{ /* đặt cho bằng kích thước  của khung lúc đầu cho các phần thẳng hàng*/
+    margin: 10px auto;
+    width: 1000px; height: 1000px;
+    float: none;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 .content{ /* điều chỉnh các khung ảnh bên trong*/
     width: 23%;
@@ -118,17 +130,16 @@ img{
 .content a{ /* chỉnh phần nội dung trong từng khung ảnh*/
     color: #c20b29;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
 }
 .content p{ /* chỉnh phần nội dung trong từng khung ảnh*/
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 800;
 
 }
 .content a:hover{
     color: white;
     transition: all 400ms;
-    font-size: 22px;
 
 }
 .img2:hover{ /* hiệu ứng ảnh*/
@@ -136,14 +147,25 @@ img{
     transition: all 400ms;
 }
 .tieude{ /* chỉnh viền dưới của tiêu đề*/
-    border-bottom: 1.7px solid rgba(18, 234, 35, 0.66);
+    border-bottom: 2px solid rgba(18, 234, 35, 0.66);
 
 }
 h1{ /* chỉnh kích thước của tiêu đề màu chữ và phông*/
-    width: 20%;
-    padding: 10px 9px;
+    width: 23%;
+    padding: 20px 9px;
     background-color: rgba(18, 234, 35, 0.7);
     color: #ffffff;
+}
+h1 a{
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+}
+h1 a:hover{
+    color: #e71616;
+    transform: scale(1.02);
+    transition: all 600ms;
+    font-size: 21px;
 }
 .end{
     margin: 10px auto;
@@ -162,7 +184,11 @@ h1{ /* chỉnh kích thước của tiêu đề màu chữ và phông*/
 .TV li{
     float: none;
 }
-.
+.anh1{
+    float: none;
+    padding: 10px;
+}
+
 
 
 
