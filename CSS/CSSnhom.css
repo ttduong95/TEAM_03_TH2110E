@@ -1,221 +1,256 @@
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 body{
-    background-color: rgba(232, 229, 229, 0.76);
+    background-color: rgba(255, 255, 255, 0.3);
     font-size: 15px;
+
     font-family: Roboto, sans-serif;
-    color: #222222;
-    font-weight: 500;
-    text-align: left;
-    line-break: auto;
-    background-image: url("../IMG/rau5.jpg");
-    background-size: cover;
-    background-attachment: fixed;
 
 }
-p{
-    margin-bottom: 10px;
-    padding-top: 10px;
+img{
+    max-width: 100%;
+    height: 800px;
 }
 a{
+    list-style: none;
     text-decoration: none;
-    list-style: none;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
 }
-.section{
-    width: 100%;
-    float: left;
-}
-.container{ /* kích thước chung của khối */
-    margin: 0 auto;
-    width: 1200px;
-    float: none;
+p{
+    font-size: 20px;
+    font-weight: 200;
 }
 
-header{
-    background-color: #50d250;
-    padding-top: 5px;
-    position: fixed;
-
+.section2{
+    background-color: rgba(4, 90, 43, 0.86);
 }
-
 .logo{
-    float: left;
+    width: 1500px;
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
 }
-.logo img{
-    width: 70px; height: 70px;
-}
-
-.bieutuong{
+.logo .logo1 li{
     float: right;
-    padding: 15px 0 0 10px;
-    font-size: 25px;
-    color: #ffffff;
+    padding-left: 20px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+
+}
+.section1{
+    width: 1500px;
+    margin: 0 auto;
+    float: none;
+
 }
 
-.bieutuong:hover{
-    transform: scale(1.18);
-    transition: 300ms;
+.logo3 {
+    float: none;
+    font-size: 70px;
+    text-align: center;
+    color: #0ab60d;
+
 }
-.logo2 li{
-    float: left;
-    padding-right: 20px;
-    list-style: none;
-    font-size: 17px;
-    padding-top: 24px;
-    margin-left: 10px;
-}
-li a{
-    color: #ffffff;
+
+.web{
+    font-size: 40px;
     font-weight: 800;
+    font-family: 'Righteous', cursive;
+
 }
-.logo2 li:hover{
-    transform: scale(1.08);
-    transition: 300ms;
+nav{
+    background-color: rgba(224, 238, 224, 0.86);
+    border-bottom: 3px solid white;
+    height: 70px;
+
+
 }
-.logo2 .item{
-    position: relative;
+.nav1{
+    width: 1500px;
+    margin: 0 auto;
+
 }
-/* code su kien bang menu tung phan trong thanh trang chu*/
-.item .menu{
+.menu{
+    padding: 20px 0 10px 0;
+    width: 1200px;
     float: left;
-    position: absolute;
-    top: 45px;
-    width: 110px;
-    padding-bottom: 10px;
-    display: none; /* an nd */
-    background-color: rgba(236, 229, 222, 0.49);
+
+
+
 }
-.item .menu li{
+.menu li{
     float: left;
-    width: 100%;
-    padding-left: 10px;
+    list-style: none;
+    width: 20%;
+    border-right:0.5px solid #ffffff;
+    text-align: center;
+
 }
 .menu a{
-    font-size: 12px;
-    color: #421a1a;
+    color: #057826;
+    font-size: 20px;
+    font-weight: 700;
 }
-.item.artive .menu{
-    display: block;
+.logo2{
+    float: right;
+    padding-top: 18px;
 }
-/* ket thuc su kien*/
-img{
-    width: 100%; height: 500px;
+.logo2 a{
+    color: #06a17c;
+    font-size: 30px;
+    padding-left: 10px;
+
 }
-.container1{ /* 2 ảnh home page kích thước khác nhau nên sẽ lấy rộng hơn kích thước chung(container=1000) là 200 sẽ thành là 1200*/
+.container{
     margin: 0 auto;
+    width: 100%;
+}
+.container .content img{
+    width: 100% ;
+
+}
+.content1{
     width: 1200px;
-    float: none;
-    padding: 80px 0 0;
-    overflow: hidden;
-}
-
-.img1{ /* điều chỉnh ảnh hompage thứ 2 có khung bằng ảnh 1(container1 = 1200) nhưng độ rộng bằng với độ rộng của container=1000, nên sẽ padding trái phải vào 100( 1200-200=1000)*/
-    padding: 10px 100px 20px;
-    background-color: rgba(18, 234, 35, 0.35);
-    border-radius: 10px;
-}
-.img3{
-    padding: 10px;
-}
-.container2{ /* đặt cho bằng kích thước  của khung lúc đầu cho các phần thẳng hàng*/
-    margin: 5px auto;
-    width: 1000px; height: 1500px;
-    float: none;
-    padding: 30px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.container3{ /* đặt cho bằng kích thước  của khung lúc đầu cho các phần thẳng hàng*/
-    margin: 10px auto;
-    width: 1000px; height: 1100px;
-    float: none;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.98);
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.content{ /* điều chỉnh các khung ảnh bên trong*/
-    width: 23%;
-    float: left;
-    border: 1px solid black;
-    text-align: center;
-    padding: 0 0 10px;
-    margin: 10px 9px;
-    overflow: hidden;
-    border-radius: 5px;
-    background: rgba(18, 234, 35, 0.62);
-}
-
-.img2{
-    width: 100%; height: 200px; /* chỉnh chiều cao ảnh cho vừa để viết nội dung bên dưới*/
-
-}
-.content a{ /* chỉnh phần nội dung trong từng khung ảnh*/
-    color: #c20b29;
-    font-weight: 600;
-    font-size: 20px;
-}
-.content p{ /* chỉnh phần nội dung trong từng khung ảnh*/
-    font-size: 20px;
-    font-weight: 800;
-
-}
-.content a:hover{ /* hieu ung thay doi mau chu trong phan shop tung san pham*/
-    color: white;
-    transition: all 400ms;
-
-}
-.img2:hover{ /* hiệu ứng ảnh*/
-    transform: scale(1.10);
-    transition: all 400ms;
-}
-.tieude{ /* chỉnh viền dưới của tiêu đề*/
-    border-bottom: 2px solid rgba(18, 234, 35, 0.66);
-
-}
-h1{ /* chỉnh kích thước của tiêu đề màu chữ và phông*/
-    width: 23%;
-    padding: 20px 9px;
-    background-color: rgba(18, 234, 35, 0.7);
-    color: #ffffff;
-}
-h1 a{
-    font-weight: 800;
-    color: #ffffff;
-    font-size: 20px;
-}
-h1 a:hover{
-    color: #e71616;
-    transform: scale(1.02);
-    transition: all 600ms;
-    font-size: 21px;
-}
-.end{
-    margin: 10px auto;
-    width: 1200px;
-    float: none;
-    padding: 10px 10px;
+    position: relative;
     background: #a4d93c;
-    color: #ffffff;
-    border-radius: 15px;
+    margin: 0 auto;
 
 }
-.TV{
-
-    padding: 10px 0 0 10px;
+.content1 .noidung{
+    width: 700px;
+    height: 300px;
+    background: rgba(102, 90, 90, 0.66);
+    position: absolute;
+    right: 20%;
+    bottom: 150px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 30px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-family: 'Courgette', cursive;
 }
-.TV li{
-    float: none;
+.container1{
+    width: 1200px;
+    margin: 50px auto;
+    height: 600px;
+    padding-left: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 .anh1{
-    float: none;
-    padding: 10px;
+    width: 275px; height: 400px;
+    float: left;
+    margin: 0 20px 0 0;
+    border: 1px solid rgba(193, 189, 188, 0.32);
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #aaaaaa;
+
+}
+.anh1 img{
+    height: 200px;
+    padding-bottom: 20px ;
+    margin-bottom: 100px;
 }
 
+.anh1 a{
+ font-size: 25px;
+    color: #226303;
 
+}
+.anh1:hover{
+    transform: scale(1.01);
+    transition: 300ms;
+    box-shadow: 5px 5px 10px #aaaaaa;
+}
+.container1 .tieude{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: 800;
+}
+.container2{
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 1500px;
+}
+.main1{
+    width: 49%;
+    float: left;
+    border-radius: 40px;
+    overflow: auto;
+}
+.main1 img{
+    height: 500px;
+}
+.main2{
+    width: 49%;
+    float: right;
+    border-radius: 40px;
+    overflow: auto;
+}
+.main2 img{
+    height: 500px;
+}
+.main3{
+    width: 100%;
+   border-radius: 30px;
+    float: left;
+    padding-top: 30px;
+}
 
+.main3 img{
+    width: 100%;
+    overflow: auto;
+    border-radius: 30px;
+    height: 600px;
+}
+.container3{
+    width: 1200px; height: 800px;
+    margin: 50px auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.61);
 
+}
+.container3 .tc{
+    text-align: center;
+    padding-bottom: 80px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.goptc {
+    float: left;
+    width: 400px;
+    padding-bottom: 100px;
+}
+.tieuchuan1{
+    padding-bottom: 150px;
+    width: 300px;
+}
+.tieuchuan2{
+    padding-bottom: 150px;
+    width: 300px;
+    float: right;
+}
+.tieuchuan1 img{
+    width: 50px;
+    height: 50px;
+}
+.tieuchuan2 img{
+    width: 50px;
+    height: 50px;
+}
+.goptc .anhchinh{
+    width: 600px;
+    height: 500px;
+   float: left;
+}
