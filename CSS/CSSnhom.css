@@ -225,7 +225,6 @@ nav{
     border-radius: 40px;
     overflow: auto;
     box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
-
 }
 .main1 img{
     height: 500px;
@@ -237,8 +236,6 @@ nav{
     border-radius: 40px;
     overflow: auto;
     box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
-
-
 }
 .main2 img{
     height: 500px;
@@ -249,7 +246,6 @@ nav{
    border-radius: 30px;
     float: left;
     box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
-
 }
 
 .main3 img{
@@ -308,11 +304,16 @@ nav{
 .ship:hover{
     transform: scale(1.05);
     transition: 800ms;
+
 }
 .ship img{
     width: 100px;
     height: 100px;
     padding: 5px;
+}
+.ship img:hover{
+    transform: rotate(-15.23deg);
+    transition: 300ms;
 }
 
 .container3{
@@ -335,6 +336,11 @@ nav{
     float: left;
     width: 400px;
     padding-bottom: 100px;
+    text-align: center;
+}
+.goptc img:hover{
+    transform: rotate(-15.23deg);
+    transition: 300ms;
 }
 .tieuchuan1{
     padding-bottom: 150px;
