@@ -6,7 +6,6 @@
 body{
     background-color: rgba(255, 255, 255, 0.3);
     font-size: 15px;
-
     font-family: Roboto, sans-serif;
 
 }
@@ -180,24 +179,7 @@ nav{
     transition: 300ms;
     box-shadow: 5px 5px 10px #aaaaaa;
 }
-.next{
-    width: 1200px;
-    height: 50px;
-    margin: 0 auto;
-    float: right;
-    margin-bottom: 50px;
 
-}
-#next{
-    margin: 20px 20px 0 0;
-    background: #ffffff;
-    padding: 1px;
-    float: left;
-    width: 50px;
-    border-radius: 5px;
-    border: 1px solid #f1eee7;
-
-}
 .container1 .tieude{
     text-align: center;
     padding-bottom: 30px;
@@ -227,6 +209,7 @@ nav{
 }
 .main1 img{
     height: 500px;
+    border-radius: 35px;
 
 }
 .main2{
@@ -238,6 +221,7 @@ nav{
 }
 .main2 img{
     height: 500px;
+    border-radius: 35px;
 }
 .main3{
     margin-top: 30px;
@@ -304,6 +288,8 @@ nav{
     transform: scale(1.05);
     transition: 800ms;
 
+
+
 }
 .ship img{
     width: 100px;
@@ -311,8 +297,8 @@ nav{
     padding: 5px;
 }
 .ship img:hover{
-    transform: rotate(-15.23deg);
-    transition: 300ms;
+    transform: rotate(360deg);
+    transition: 1500ms;
 }
 
 .container3{
@@ -338,7 +324,7 @@ nav{
     text-align: center;
 }
 .goptc img:hover{
-    transform: rotate(-15.23deg);
+    transform: rotate(-15deg);
     transition: 500ms;
 }
 .tieuchuan1{
@@ -362,4 +348,31 @@ nav{
     width: 600px;
     height: 500px;
    float: left;
+}
+.lienket{
+    width: 1500px;
+    margin: 0 auto;
+    height: 500px;
+}
+.lienket .brand{
+    text-align: center;
+    width: 100%;
+    float: left;
+    font-weight: 600;
+    font-size: 35px;
+    font-family: 'Courgette', cursive;
+
+}
+.nhanhieu img{
+    width: 200px;
+    height: 200px;
+}
+.nhanhieu{
+    float: left;
+    margin: 30px 30px 0 0;
+    padding-left: 65px;
+}
+.nhanhieu:hover{
+    transform: scale(1.05);
+    transition: 500ms;
 }

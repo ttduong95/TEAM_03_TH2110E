@@ -154,7 +154,30 @@
     </aside>
 
 </section>
-<footer class="section"></footer>
+<footer class="section">
+    <div class="container">
+        <div class="lienket" onclick="next(this)">
+            <div class="brand">
+            <span>Brands associated with us</span>
+            </div>
+        <div class="nhanhieu">
+            <img id="next" src="IMG/thuonghieu1.jpg">
+        </div>
+        <div class="nhanhieu">
+            <img id="next1" src="IMG/thuonghieu2.jpg">
+        </div>
+        <div class="nhanhieu">
+            <img id="next2" src="IMG/thuonghieu3.jpg">
+        </div>
+        <div class="nhanhieu">
+            <img id="next3" src="IMG/thuonghieu4.jpg">
+        </div>
+        <div class="nhanhieu">
+            <img id="next4" src="IMG/thuonghieu5.jpg">
+        </div>
+    </div>
+    </div>
+</footer>
 <script type="text/javascript"></script>
 <script>
     var idex=1;
@@ -167,7 +190,15 @@
         }
     }
     setInterval(auto,3000);
-
+    var next=function (){
+        var nexts=["IMG/thuonghieu1.jpg","IMG/thuonghieu5.jpg","IMG/thuonghieu2.jpg","IMG/thuonghieu4.jpg","IMG/thuonghieu1.jpg","IMG/thuonghieu4.jpg","IMG/thuonghieu2.jpg","IMG/thuonghieu4.jpg","IMG/thuonghieu1.jpg","IMG/thuonghieu3.jpg"]
+        document.getElementById("next").src=nexts[parseInt(Math.random()*10)];
+        document.getElementById("next1").src=nexts[parseInt(Math.random()*10)];
+        document.getElementById("next2").src=nexts[parseInt(Math.random()*10)];
+        document.getElementById("next3").src=nexts[parseInt(Math.random()*10)];
+        document.getElementById("next4").src=nexts[parseInt(Math.random()*10)];
+    }
+    setInterval(next,1000);
 </script>
 </body>
 </html>
