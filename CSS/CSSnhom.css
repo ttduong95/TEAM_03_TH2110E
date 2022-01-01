@@ -1,194 +1,450 @@
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 body{
-    background-color: rgba(232, 229, 229, 0.76);
+    background-color: rgba(255, 255, 255, 0.3);
     font-size: 15px;
     font-family: Roboto, sans-serif;
-    color: #222222;
-    font-weight: 500;
-    text-align: left;
-    line-break: auto;
-    background-image: url("../IMG/rau5.jpg");
-    background-size: cover;
-    background-attachment: fixed;
 
-}
-p{
-    margin-bottom: 10px;
-    padding-top: 10px;
-}
-a{
-    text-decoration: none;
-    list-style: none;
-}
-.section{
-    width: 100%;
-    float: left;
-}
-.container{ /* kích thước chung của khối */
-    margin: 0 auto;
-    width: 1200px;
-    float: none;
-}
-
-header{
-    background-color: #50d250;
-    padding-top: 5px;
-    position: fixed;
-
-}
-
-.logo{
-    float: left;
-}
-.logo img{
-    width: 70px; height: 70px;
-}
-
-.bieutuong{
-    float: right;
-    padding: 15px 0 0 10px;
-    font-size: 25px;
-    color: #ffffff;
-}
-
-.bieutuong:hover{
-    transform: scale(1.18);
-    transition: 300ms;
-}
-li{
-    float: left;
-    padding-right: 25px;
-    list-style: none;
-    font-size: 17px;
-    padding-top: 24px;
-}
-li a{
-    color: #ffffff;
-    font-weight: 800;
-}
-.logo2 li:hover{
-    transform: scale(1.08);
-    transition: 300ms;
 }
 img{
-    width: 100%; height: 500px;
+    max-width: 100%;
+    height: 800px;
 }
-.container1{ /* 2 ảnh home page kích thước khác nhau nên sẽ lấy rộng hơn kích thước chung(container=1000) là 200 sẽ thành là 1200*/
+a{
+    list-style: none;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #222222;
+}
+p{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Courgette', cursive;
+}
+.section{
     margin: 0 auto;
-    width: 1200px;
+    padding: 0;
+
+}
+.section1{
+    width: 1500px;
+    margin: 0 auto;
     float: none;
-    padding: 80px 0 0;
-    overflow: hidden;
+}
+.section2{
+    background-color: rgba(4, 90, 43, 0.86);
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.68);
+    border: 1px solid rgba(201, 201, 201, 0.68);
+}
+.logo{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
+
+}
+.logo .logo1 li{
+    float: right;
+    padding-left: 20px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+
 }
 
-.img1{ /* điều chỉnh ảnh hompage thứ 2 có khung bằng ảnh 1(container1 = 1200) nhưng độ rộng bằng với độ rộng của container=1000, nên sẽ padding trái phải vào 100( 1200-200=1000)*/
-    padding: 10px 100px 20px;
-    background-color: rgba(18, 234, 35, 0.35);
-    border-radius: 10px;
-}
-.img3{
-    padding: 10px;
-}
-.container2{ /* đặt cho bằng kích thước  của khung lúc đầu cho các phần thẳng hàng*/
-    margin: 5px auto;
-    width: 1000px; height: 1500px;
+.logo3 {
     float: none;
-    padding: 30px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.container3{ /* đặt cho bằng kích thước  của khung lúc đầu cho các phần thẳng hàng*/
-    margin: 10px auto;
-    width: 1000px; height: 1000px;
-    float: none;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.98);
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.content{ /* điều chỉnh các khung ảnh bên trong*/
-    width: 23%;
-    float: left;
-    border: 1px solid black;
+    font-size: 70px;
     text-align: center;
-    padding: 0 0 10px;
-    margin: 10px 9px;
-    overflow: hidden;
-    border-radius: 5px;
-    background: rgba(18, 234, 35, 0.62);
-}
-
-.img2{
-    width: 100%; height: 200px; /* chỉnh chiều cao ảnh cho vừa để viết nội dung bên dưới*/
+    color: #0ab60d;
 
 }
-.content a{ /* chỉnh phần nội dung trong từng khung ảnh*/
-    color: #c20b29;
-    font-weight: 600;
-    font-size: 20px;
-}
-.content p{ /* chỉnh phần nội dung trong từng khung ảnh*/
-    font-size: 20px;
+
+.web{
+    font-size: 40px;
     font-weight: 800;
+    font-family: 'Courgette', cursive;
+
 
 }
-.content a:hover{
-    color: white;
-    transition: all 400ms;
+nav{
+    background-color: rgba(224, 238, 224, 0.86);
+    border: 1px solid rgb(255, 255, 255);
+    height: 60px;
+    box-shadow: 3px 3px 10px rgba(108, 108, 108, 0.94);
+}
+.nav1{
+    width: 1400px;
+    margin: 0 auto;
+}
+.menu{
+    padding: 20px 0 10px 0;
+    width: 1000px;
+    float: left;
+
+
 
 }
-.img2:hover{ /* hiệu ứng ảnh*/
-    transform: scale(1.10);
-    transition: all 400ms;
-}
-.tieude{ /* chỉnh viền dưới của tiêu đề*/
-    border-bottom: 2px solid rgba(18, 234, 35, 0.66);
+.menu li{
+    float: left;
+    list-style: none;
+    width: 20%;
+    border-right:0.5px solid #ffffff;
+    text-align: center;
 
 }
-h1{ /* chỉnh kích thước của tiêu đề màu chữ và phông*/
-    width: 23%;
-    padding: 20px 9px;
-    background-color: rgba(18, 234, 35, 0.7);
-    color: #ffffff;
-}
-h1 a{
-    font-weight: 800;
-    color: #ffffff;
+.menu a{
+    color: #057826;
     font-size: 20px;
+    font-weight: 700;
 }
-h1 a:hover{
-    color: #e71616;
-    transform: scale(1.02);
-    transition: all 600ms;
-    font-size: 21px;
+.logo2{
+    float: right;
+    padding-top: 15px;
 }
-.end{
-    margin: 10px auto;
+.logo2 a{
+    color: #06a17c;
+    font-size: 30px;
+    padding-left: 10px;
+
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.container .content img{
+    width: 100% ;
+
+}
+.content1{
     width: 1200px;
-    float: none;
-    padding: 10px 10px;
-    background: #a4d93c;
-    color: #ffffff;
-    border-radius: 15px;
+    position: relative;
+    margin: 0 auto;
 
 }
-.TV{
-
-    padding: 10px 0 0 10px;
+.content1 .noidung{
+    width: 700px;
+    height: 300px;
+    background: rgba(102, 90, 90, 0.66);
+    position: absolute;
+    right: 20%;
+    bottom: 250px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 30px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-family: 'Courgette', cursive;
 }
-.TV li{
-    float: none;
+.container1{
+    width: 1200px;
+    position: relative;
+    margin: 50px auto;
+    padding-left: 20px;
+    height: 600px;
+    border-bottom: 1px solid #e8e2c8;
+
+
 }
 .anh1{
-    float: none;
-    padding: 10px;
+    width: 275px; height: 400px;
+    float: left;
+    margin: 20px 20px 0 0;
+    border: 1px solid rgba(193, 189, 188, 0.32);
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #aaaaaa;
+
+}
+.anh1 img{
+    height: 200px;
+    padding-bottom: 20px ;
+    margin-bottom: 100px;
 }
 
+.anh1 a{
+ font-size: 25px;
+    color: #226303;
+
+}
+.anh1:hover{
+    transform: scale(1.01);
+    transition: 300ms;
+    box-shadow: 5px 5px 10px #aaaaaa;
+}
+
+.container1 .tieude{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: 'Courgette', cursive;
+}
+#add{
+    display: none;
+}
+.container1.active .add{
+    display: block;
+}
+.container2{
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 1500px;
+    position: relative;
+}
+.main1{
+    width: 49%;
+    float: left;
+    border-radius: 40px;
+    overflow: auto;
+    box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
+}
+.main1 img{
+    height: 500px;
+    border-radius: 35px;
+
+}
+.main2{
+    width: 49%;
+    float: right;
+    border-radius: 40px;
+    overflow: auto;
+    box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
+}
+.main2 img{
+    height: 500px;
+    border-radius: 35px;
+}
+.main3{
+    margin-top: 30px;
+    width: 100%;
+   border-radius: 30px;
+    float: left;
+    box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
+}
+
+.main3 img{
+    width: 100%;
+    overflow: auto;
+    border-radius: 30px;
+    height: 600px;
+}
+.nd1{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 5px;
+    top: 70px;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Courgette', cursive;
+
+}
+.nd2{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    right: 200px;
+    top: 70px;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Courgette', cursive;
+}
+.nd3{
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    right: 350px;
+    bottom: 350px;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Courgette', cursive;
+}
+.free{
+    width: 100%;
+    float: left;
+    padding-left: 90px;
+}
+.ship{
+    float: left;
+    width: 400px;
+    margin: 50px 50px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    text-align: center;
+    padding: 20px;
+    background: rgba(208, 215, 215, 0.37);
+    border-radius: 30px;
+    box-shadow: 5px 5px 12px rgba(128, 128, 128, 0.68);
+}
+.ship:hover{
+    transform: scale(1.05);
+    transition: 800ms;
 
 
 
+}
+.ship img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+.ship img:hover{
+    transform: rotate(360deg);
+    transition: 1500ms;
+}
+
+.container3{
+    width: 1200px; height: 800px;
+    margin: 50px auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.61);
+
+
+}
+.container3 .tc{
+    text-align: center;
+    padding-bottom: 80px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Courgette', cursive;
+
+
+}
+.goptc {
+    float: left;
+    width: 400px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.goptc img:hover{
+    transform: rotate(-15deg);
+    transition: 500ms;
+}
+.tieuchuan1{
+    padding-bottom: 150px;
+    width: 300px;
+}
+.tieuchuan2{
+    padding-bottom: 150px;
+    width: 300px;
+    float: right;
+}
+.tieuchuan1 img{
+    width: 50px;
+    height: 50px;
+}
+.tieuchuan2 img{
+    width: 50px;
+    height: 50px;
+}
+.goptc .anhchinh{
+    width: 600px;
+    height: 500px;
+   float: left;
+}
+.lienket{
+    width: 1500px;
+    margin: 0 auto;
+    height: 500px;
+}
+.lienket .brand{
+    text-align: center;
+    width: 100%;
+    float: left;
+    font-weight: 600;
+    font-size: 35px;
+    font-family: 'Courgette', cursive;
+
+}
+.nhanhieu img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.nhanhieu{
+    float: left;
+    margin: 30px 30px 0 60px;
+    overflow: auto;
+}
+.nhanhieu:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+}
+.end{
+    width: 1500px;
+    margin: 0 auto;
+    background: rgba(0, 135, 77, 0.77);
+    height: 70px;
+    border: 1px solid rgba(236, 229, 222, 0.66);
+    border-radius: 50px;
+    box-shadow: 5px 10px 10px #cbcbc4;
+
+}
+.end .emails{
+    float: left;
+    width: 35%;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+}
+.end .inputemail{
+    float: right;
+    color: white;
+    padding: 10px;
+    width: 60%;
+    height: 50px;
+}
+.end .inputemail input{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    padding-left: 10px;
+    border: 1px solid rgba(236, 229, 222, 0.66);
+
+}
+.end .inputemail button{
+    width: 19%;
+    height: 50px;
+    font-weight: 600;
+    background: #50ecc8;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+.theend{
+    height: 500px;
+    background: rgba(181, 245, 220, 0.38);
+}
+.theend li{
+    list-style: none;
+}
+.menuend{
+    width: 1500px;
+    margin: 0 auto;
+    height: 300px;
+}
+.menuend .tongcot{
+    float: left;
+}
+.menuend .cot1{
+    width: 300px;
+    float: left;
+    font-size: 20px;
+    margin:50px 30px 0 40px ;
+    padding: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.theend .banquyen{
+    width: 100%;
+    font-family: Roboto, sans-serif;
+}
