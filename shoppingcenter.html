@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAGE SHOP</title>
+    <link rel="stylesheet" href="CSS/shoppingcenter.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="part-one">
+    <div class="text">Discover Our Products</div>
+    <div class="small-text">At vero eos et accusamus et  ducimus qui blanditiis praesentium.</div>
+    <div class="icon-menu">
+        <ul class="ul1">
+            <li id="one" class="li1" onclick="ClickFruit()">
+                <a>
+                    <div class="icon"><span onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)" class="fas fa-carrot" style="color: grey;font-size:50px"></span></div>
+                    <div class="title-cate">Fruits</div>
+                </a>
+            </li>
+            <li id="two" class="li1" onclick="ClickJuice()">
+                <a>
+                    <div class="icon"><span onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)" class="fas fa-seedling" style="color:grey;font-size:50px"></span></div>
+                    <div class="title-cate">Vegetables</div>
+                </a>
+            </li>
+            <li id="three" class="li1" onclick="ClickVegetable()">
+                <a>
+                    <div class="icon"><span onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)" class="fas fa-cocktail" style="color:grey;font-size:50px"></span></div>
+                    <div class="title-cate">Juices</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="part-two" id="fruit">
+    <div class="box-one" onmouseenter="EnterBox0(this)" onmouseleave="LeaveBox0(this)">
+        <div class="image">
+            <img src="IMG/nho.jpeg" width="120" height="120"/>
+        </div>
+        <div class="info">
+            <div class="product-name">Green Grape</div>
+            <div class="price">
+                <div class="cost">$14.55</div>
+                <div class="order">
+                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-one" onmouseenter="EnterBox1(this)" onmouseleave="LeaveBox1(this)">
+        <div class="image">
+            <img src="IMG/nho-den.jpeg" width="120" height="120"/>
+        </div>
+        <div class="info">
+            <div class="product-name">Black Grape</div>
+            <div class="price">
+                <div class="cost">$15.55</div>
+                <div class="order">
+                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-one" onmouseenter="EnterBox2(this)" onmouseleave="LeaveBox2(this)">
+        <div class="image">
+            <img src="IMG/apple.jpeg" width="120" height="120"/>
+        </div>
+        <div class="info">
+            <div class="product-name">Fresh Apple</div>
+            <div class="price">
+                <div class="cost">$16.55</div>
+                <div class="order">
+                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-one" onmouseenter="EnterBox3(this)" onmouseleave="LeaveBox3(this)">
+        <div class="image">
+            <img src="IMG/kiwi.jpeg" width="120" height="120"/>
+        </div>
+        <div class="info">
+            <div class="product-name">Tropical Kiwi</div>
+            <div class="price">
+                <div class="cost">$14.55</div>
+                <div class="order">
+                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-one" onmouseenter="EnterBox4(this)" onmouseleave="LeaveBox4(this)">
+        <div class="image">
+            <img src="IMG/lemon.jpeg" width="120" height="120"/>
+        </div>
+        <div class="info">
+            <div class="product-name">Yellow Lemon</div>
+            <div class="price">
+                <div class="cost">$15.55</div>
+                <div class="order">
+                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-one" onmouseenter="EnterBox5(this)" onmouseleave="LeaveBox5(this)">
+        <div class="image">
+            <img src="IMG/banana.jpeg" width="120" height="120"/>
+        </div>
+        <div class="info">
+            <div class="product-name">Tropical Banana</div>
+            <div class="price">
+                <div class="cost">$19.55</div>
+                <div class="order">
+                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="part-three">
+    <div class="ig">
+        <div><img src="IMG/dis1.png" width="370" height="270"/></div>
+    </div>
+    <div class="ig">
+        <div><img src="IMG/dis2.png" width="370" height="270"/></div>
+    </div>
+    <div class="ig">
+        <div><img src="IMG/dis3.png" width="370" height="270"/></div>
+    </div>
+</section>
+</body>
+<script type="text/javascript">
+    function ChangeColor1(e){
+        e.style.color="lightgreen";
+    }
+    function RemoveColor1(e){
+        e.style.color = "grey";
+    }
+    function EnterBox0(){
+        var ar=document.getElementsByClassName("cost");
+        ar[0].classList.add("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[0].classList.add("order-active");
+    }
+    function LeaveBox0(){
+        var ar=document.getElementsByClassName("cost");
+        ar[0].classList.remove("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[0].classList.remove("order-active");
+    }
+    function EnterBox1(){
+        var ar=document.getElementsByClassName("cost");
+        ar[1].classList.add("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[1].classList.add("order-active");
+    }
+    function LeaveBox1(){
+        var ar=document.getElementsByClassName("cost");
+        ar[1].classList.remove("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[1].classList.remove("order-active");
+    }
+    function EnterBox2(){
+        var ar=document.getElementsByClassName("cost");
+        ar[2].classList.add("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[2].classList.add("order-active");
+    }
+    function LeaveBox2(){
+        var ar=document.getElementsByClassName("cost");
+        ar[2].classList.remove("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[2].classList.remove("order-active");
+    }
+    function EnterBox3(){
+        var ar=document.getElementsByClassName("cost");
+        ar[3].classList.add("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[3].classList.add("order-active");
+    }
+    function LeaveBox3(){
+        var ar=document.getElementsByClassName("cost");
+        ar[3].classList.remove("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[3].classList.remove("order-active");
+    }
+    function EnterBox4(){
+        var ar=document.getElementsByClassName("cost");
+        ar[4].classList.add("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[4].classList.add("order-active");
+    }
+    function LeaveBox4(){
+        var ar=document.getElementsByClassName("cost");
+        ar[4].classList.remove("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[4].classList.remove("order-active");
+    }
+    function EnterBox5(){
+        var ar=document.getElementsByClassName("cost");
+        ar[5].classList.add("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[5].classList.add("order-active");
+    }
+    function LeaveBox5(){
+        var ar=document.getElementsByClassName("cost");
+        ar[5].classList.remove("cost-active");
+        var arr=document.getElementsByClassName("order");
+        arr[5].classList.remove("order-active");
+    }
+</script>
+</html>
+<script type="text/javascript">
+    function ClickJuice(){
+        document.getElementById("fruit").innerHTML=
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox0(this)\" onmouseleave=\"LeaveBox0(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/tomato.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Tomato Juice</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox1(this)\" onmouseleave=\"LeaveBox1(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/orange.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Orange Juice</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox2(this)\" onmouseleave=\"LeaveBox2(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/appale-juice.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Apple Juice</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$16.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox3(this)\" onmouseleave=\"LeaveBox3(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/Spiced-pear.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Spiced-pear</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox4(this)\" onmouseleave=\"LeaveBox4(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/extra-jam.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Extra Jam</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox5(this)\" onmouseleave=\"LeaveBox5(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/snapple-apple.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Snapple Apple</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$19.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n";
+    }
+    function ClickVegetable(){
+        document.getElementById("fruit").innerHTML=
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox0(this)\" onmouseleave=\"LeaveBox0(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/sup-lo.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Broccoli</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox1(this)\" onmouseleave=\"LeaveBox1(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/bap-cai.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Cabbage</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox2(this)\" onmouseleave=\"LeaveBox2(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/green-bean.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Green Bean</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$16.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox3(this)\" onmouseleave=\"LeaveBox3(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/bi-dao.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Wax Gourd</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox4(this)\" onmouseleave=\"LeaveBox4(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/strawberry.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Strawberry</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox5(this)\" onmouseleave=\"LeaveBox5(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/tomatoo.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Tomato</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$19.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n";
+    }
+    function ClickFruit(){
+        document.getElementById("fruit").innerHTML="<div class=\"box-one\" onmouseenter=\"EnterBox0(this)\" onmouseleave=\"LeaveBox0(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/nho.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Green Grape</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox1(this)\" onmouseleave=\"LeaveBox1(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/nho-den.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Black Grape</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox2(this)\" onmouseleave=\"LeaveBox2(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/apple.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Fresh Apple</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$16.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox3(this)\" onmouseleave=\"LeaveBox3(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/kiwi.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Tropical Kiwi</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox4(this)\" onmouseleave=\"LeaveBox4(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/lemon.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Yellow Lemon</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "    <div class=\"box-one\" onmouseenter=\"EnterBox5(this)\" onmouseleave=\"LeaveBox5(this)\">\n" +
+            "        <div class=\"image\">\n" +
+            "            <img src=\"IMG/banana.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"info\">\n" +
+            "            <div class=\"product-name\">Tropical Banana</div>\n" +
+            "            <div class=\"price\">\n" +
+            "                <div class=\"cost\">$19.55</div>\n" +
+            "                <div class=\"order\">\n" +
+            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "    </div>";
+    }
+</script>
