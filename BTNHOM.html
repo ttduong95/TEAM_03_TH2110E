@@ -60,27 +60,32 @@
         </div>
 </section>
 <section class="main section1">
+    <article>
         <div class="container1">
             <p class="tieude">Best Sellers From The Fields</p>
+            <div class="tab">
+                <button type="button" onclick="back()"><i class="fas fa-carrot"></i></button>
+                <button type="button" onclick="add()"><i class="fas fa-seedling"></i></button>
+            </div>
         <div class="anh1">
-            <img src="IMG/dautay.jpg">
-            <h1><a href="#">STRAWBERRY</a></h1>
-            <p><a href="#">$5</a></p>
+            <img id="add" src="IMG/dautay.jpg">
+            <h1 id="ten"><a href="#">STRAWBERRY</a></h1>
+            <p id="tien"><a href="#">$5</a></p>
         </div>
             <div class="anh1">
-                <img src="IMG/cherry.png">
-                <h1><a href="#">CHERRY</a></h1>
-                <p><a href="#">$10</a></p>
+                <img id="add1" src="IMG/cherry.png">
+                <h1 id="ten1"><a href="#">CHERRY</a></h1>
+                <p id="tien1" ><a href="#">$10</a></p>
             </div>
             <div class="anh1">
-                <img src="IMG/duahau.jpg">
-                <h1><a href="#">WATERMELON</a></h1>
-                <p><a href="#">$9</a></p>
+                <img id="add2" src="IMG/duahau.jpg">
+                <h1 id="ten2"><a href="#">WATERMELON</a></h1>
+                <p id="tien2"><a href="#">$9</a></p>
             </div>
             <div class="anh1">
-                <img src="IMG/mangcut.jpg">
-                <h1><a href="#">MANGOSTEEN</a></h1>
-                <p><a href="#">$8</a></p>
+                <img id="add3" src="IMG/mangcut.jpg">
+                <h1 id="ten3" ><a href="#">MANGOSTEEN</a></h1>
+                <p id="tien3"><a href="#">$8</a></p>
             </div>
 
         </div>
@@ -257,6 +262,43 @@
         document.getElementById("next4").src=nexts[parseInt(Math.random()*10)];
     }
     setInterval(next,3000);
+    var add=function (){
+        document.getElementById("add").src="IMG/khoailang.jpg";
+        document.getElementById("ten").innerHTML="<a href=\"#\">SWEET POTATO</a>";
+        document.getElementById("tien").innerHTML="<a href=\"#\">$8</a>";
+
+        document.getElementById("add1").src="IMG/bapcai.jpg";
+        document.getElementById("ten1").innerHTML="<a href=\"#\">SALAD</a>";
+        document.getElementById("tien1").innerHTML="<a href=\"#\">$5</a>";
+
+        document.getElementById("add2").src="IMG/cachua.jpg";
+        document.getElementById("ten2").innerHTML="<a href=\"#\">TOMATO</a>";
+        document.getElementById("tien2").innerHTML="<a href=\"#\">$3</a>";
+
+        document.getElementById("add3").src="IMG/vege1.jpg";
+        document.getElementById("ten3").innerHTML="<a href=\"#\">CAULIFLOWER</a>";
+        document.getElementById("tien3").innerHTML="<a href=\"#\">$2</a>";
+
+    }
+    var back=function (){
+        var x=document.getElementById("add");
+        x.src="IMG/dautay.jpg";
+        document.getElementById("ten").innerHTML="<a href=\"#\">STRAWBERRY</a>";
+        document.getElementById("tien1").innerHTML="<a href=\"#\">$5</a>";
+        document.getElementById("add1").src="IMG/cherry.png";
+        document.getElementById("ten1").innerHTML="<a href=\"#\">CHERRY</a>";
+        document.getElementById("tien1").innerHTML="<a href=\"#\">$10</a>";
+
+        document.getElementById("add2").src="IMG/duahau.jpg";
+        document.getElementById("ten2").innerHTML="<a href=\"#\">WATERMELON</a>";
+        document.getElementById("tien2").innerHTML="<a href=\"#\">$9</a>";
+
+        document.getElementById("add3").src="IMG/mangcut.jpg";
+        document.getElementById("ten3").innerHTML="<a href=\"#\">MANGOSTEEN</a>";
+        document.getElementById("tien3").innerHTML="<a href=\"#\">$8</a>";
+    }
+    setInterval(add,5000);
+    setInterval(back,10000);
 </script>
 </body>
 </html>

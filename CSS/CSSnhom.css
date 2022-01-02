@@ -30,12 +30,14 @@ p{
     padding: 0;
 
 }
+
 .section1{
     width: 1500px;
     margin: 0 auto;
     float: none;
 }
 .section2{
+    margin: 0 auto;
     background-color: rgba(4, 90, 43, 0.86);
     box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.68);
     border: 1px solid rgba(201, 201, 201, 0.68);
@@ -146,7 +148,7 @@ nav{
     position: relative;
     margin: 50px auto;
     padding-left: 20px;
-    height: 600px;
+    height: 700px;
     border-bottom: 1px solid #e8e2c8;
 
 
@@ -189,12 +191,27 @@ nav{
     font-weight: 800;
     font-family: 'Courgette', cursive;
 }
-#add{
-    display: none;
+.container1 .tab{
+    width: 100%;
+    text-align: center;
 }
-.container1.active .add{
-    display: block;
+.tab button{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-right: 20px;
+    color: rgba(128, 128, 128, 0.68);
+    border: 1px solid #dedada;
+    box-shadow: 5px 5px 10px #aaaaaa;
 }
+.tab button:hover{
+    transform: scale(1.10);
+    transition: 500ms;
+    color: #09ecaa;
+}
+
 .container2{
     width: 1500px;
     margin: 0 auto;
