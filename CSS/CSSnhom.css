@@ -189,7 +189,10 @@ nav{
 .container1 .tieude{
     text-align: center;
     padding-bottom: 30px;
-    font-size: 35px;
+
+}
+.tieude a{
+    font-size: 37px;
     font-weight: 800;
     font-family: 'Courgette', cursive;
 }
