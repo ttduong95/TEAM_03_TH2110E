@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Giỏ hàng</title>
+  <link rel="stylesheet" href="CSS/giohang.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,300,700|Caveat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Courgette&family=Shizuru&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ea42f3d974.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header section2">
+  <div class="logo">
+    <div class="logo1">
+      <ul class="mainlogo">
+        <li>My Account</li>
+        <li>My Favourites</li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+<header class="header section">
+  <div class="logo3">
+    <a href="https://duongtt.herokuapp.com/"><i class="fas fa-apple-alt"></i></a>
+    <h1 class="web" >GREEN VEGETABLE</h1>
+  </div>
+
+</header>
+<nav class="nav section">
+  <div class="nav1">
+    <ul class="menu">
+      <li><a href="https://duongtt.herokuapp.com/">Home page</a> </li>
+      <li><a href="#">Product</a> </li>
+      <li><a href="#">Blog vegetable</a> </li>
+      <li><a href="https://duongtt.herokuapp.com/shoppingcenter.html">Shop</a> </li>
+    </ul>
+    <div class="logo2">
+      <a href="#"> <i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</nav>
+<section class="main section1">
+  <div class="container1">
+    <p class="tieude">SHOPPING CART</p>
+    <div class="row mb ">
+      <div class="boxtrai mr">
+        <div class="row">
+          <h1>DELIVERY INFORMATION</h1>
+          <table class="thongtinnhanhang">
+            <tbody id="thongtinnhanhang">
+                <tr>
+                  <td >FEMALE NAME</td>
+                  <td><input type="text" name="hoten" ></td>
+                </tr>
+                <tr>
+                  <td>ADDRESS</td>
+                  <td><input type="text" name="diachi" ></td>
+                </tr>
+                <tr>
+                  <td>PHONE</td>
+                  <td><input type="text" name="dienthoai" ></td>
+                </tr>
+                <tr>
+                  <td>EMAIL</td>
+                  <td><input type="text" name="email" ></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row mb">
+          <h1>CART</h1>
+          <table>
+            <tr>
+              <th>Number</th>
+              <th>Image</th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Total(VNĐ)</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+          </table>
+        </div>
+        <div class="row mb">
+            <button class="dongy" onclick="dongydathang()">AGREE TO ORDER</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="section">
+  <div class="container">
+    <div class="lienket" onclick="next(this)">
+      <div class="brand">
+        <span>Brands associated with us</span>
+      </div>
+      <div class="nhanhieu">
+        <img id="next" src="IMG/thuonghieu1.jpg">
+      </div>
+      <div class="nhanhieu">
+        <img id="next1" src="IMG/thuonghieu2.jpg">
+      </div>
+      <div class="nhanhieu">
+        <img id="next2" src="IMG/thuonghieu3.jpg">
+      </div>
+      <div class="nhanhieu">
+        <img id="next3" src="IMG/thuonghieu4.jpg">
+      </div>
+      <div class="nhanhieu">
+        <img id="next4" src="IMG/thuonghieu5.jpg">
+      </div>
+    </div>
+    <div class="end">
+      <div class="emails">
+        <i class="far fa-envelope"> SIGN UP FOR NEWSLETTERS</i>
+      </div>
+      <div class="inputemail">
+        <input type="email" placeholder="Enter Your Email">
+        <button type="submit"><a href="#">SUBSCRIBE</a></button>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="theend">
+      <div class="menuend">
+        <ul class="tongcot">
+          <li class="cot1">
+            CUSTOMER SERVICE
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Help and advice</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </li>
+          <li class="cot1">INFORMATION
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Payments & Returns</a></li>
+              <li><a href="#">View Catalogues Online</a></li>
+            </ul>
+          </li>
+          <li class="cot1">ABOUT US
+            <ul>
+              <li><a href="#">Who We Are ?</a></li>
+              <li><a href="#">Corporate Responsibility</a></li>
+              <li><a href="#">California Laws</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </li>
+          <li class="cot1">CONTACT US
+            <ul>
+              <li><i class="fas fa-phone-square-alt"></i> <a href="#">(+612) 2531 5600</a></li>
+              <li><i class="fas fa-envelope"></i> <a href="#">greenvegetable@gmail.com</a></li>
+              <li><i class="fas fa-map-marker-alt"></i> <a href="#">PBox 2022 Galaxy  Street West</a></li>
+              <li><i class="fas fa-door-open"></i> <a href="#">Opening Hours : 8.00AM - 21.00AM</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="banquyen">
+          <p>Copyright © 2019 Vinovathemes. All Rights Reserved.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/giohang.js"></script>
+<script type="text/javascript">
+  showgiohang_tranggiohang()
+</script>
+
+</body>
+</html>
