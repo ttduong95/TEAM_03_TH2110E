@@ -209,12 +209,13 @@ nav{
     margin-right: 20px;
     color: rgba(128, 128, 128, 0.68);
     border: 1px solid #dedada;
-    box-shadow: 5px 5px 10px #aaaaaa;
+    box-shadow: 1px 2px 8px #aaaaaa;
 }
 .tab button:hover{
     transform: scale(1.10);
     transition: 500ms;
     color: #09ecaa;
+    box-shadow: 5px 5px 10px #aaaaaa;
 }
 
 .container2{
