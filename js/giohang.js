@@ -121,7 +121,7 @@ function showthongtinnguoinhan(){
     var thongtin = JSON.parse(nguoinhan);
 
     var tt='<tr>' +
-        '<td >FEMALE NAME</td>' +
+        '<td >NAME</td>' +
         '    <td>'+thongtin[0]+'</td>' +
         '</tr>' +
         '<tr>' +
