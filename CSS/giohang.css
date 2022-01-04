@@ -31,13 +31,13 @@ p{
 
 }
 .section1{
-    width: 1200px;
+    width: 1500px;
     margin: 0 auto;
     float: none;
 }
 .section2{
-    background-color: rgba(4, 90, 43, 0.86);
-    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.68);
+    margin: 0 auto;
+    background: rgba(0, 135, 77, 0.77);
     border: 1px solid rgba(201, 201, 201, 0.68);
 }
 .logo{
@@ -50,18 +50,20 @@ p{
     float: right;
     padding-left: 20px;
     list-style: none;
-    color: rgb(255, 255, 255);
+    color: rgb(241, 238, 231);
 
 }
 
 .logo3 {
     float: none;
-    font-size: 70px;
     text-align: center;
-    color: #0ab60d;
+    color: #0d800f;
 
 }
-
+.logo3 a{
+    color: #67e39e;
+    font-size: 70px;
+}
 .web{
     font-size: 40px;
     font-weight: 800;
