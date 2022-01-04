@@ -68,7 +68,7 @@ p{
 
 .web{
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 300;
     font-family: 'Courgette', cursive;
 
 
@@ -87,8 +87,6 @@ nav{
     padding: 20px 0 10px 0;
     width: 1000px;
     float: left;
-
-
 
 }
 .menu li{
@@ -114,76 +112,16 @@ nav{
     padding-left: 10px;
 
 }
-.container{
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-}
-.container .content img{
-    width: 100% ;
 
-}
-.content1{
-    width: 1200px;
-    position: relative;
-    margin: 0 auto;
-
-}
-.content1 .noidung{
-    width: 700px;
-    height: 300px;
-    background: rgba(102, 90, 90, 0.66);
-    position: absolute;
-    right: 20%;
-    bottom: 250px;
-    text-align: center;
-    font-size: 25px;
-    line-height: 30px;
-    padding: 30px;
-    color: white;
-    border-radius: 50px;
-    border: 2px solid white;
-    font-family: 'Courgette', cursive;
-}
 .container1{
     width: 1200px;
     position: relative;
     margin: 50px auto;
     padding-left: 20px;
-    height: 700px;
+    height: 6100px;
     border-bottom: 1px solid #e8e2c8;
-
-
-}
-.anh1{
-    width: 275px; height: 400px;
-    float: left;
-    margin: 20px 20px 0 0;
-    border: 1px solid rgba(193, 189, 188, 0.32);
-    text-align: center;
-    padding-bottom: 20px;
-    position: relative;
-    overflow: auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px #aaaaaa;
-
-}
-.anh1 img{
-    height: 200px;
-    padding-bottom: 20px ;
-    margin-bottom: 100px;
-}
-
-.anh1 a{
- font-size: 25px;
-    color: #226303;
-
-}
-.anh1:hover{
-    transform: scale(1.01);
-    transition: 300ms;
-    box-shadow: 5px 5px 10px #aaaaaa;
+    text-align: justify-all;
+    font-weight: lighter;
 }
 
 .container1 .tieude{
@@ -192,104 +130,32 @@ nav{
 
 }
 .tieude a{
-    font-size: 37px;
+    font-size: 50px;
     font-weight: 800;
     font-family: 'Courgette', cursive;
+    color: darkolivegreen;
 }
-.container1 .tab{
-    width: 100%;
-    text-align: center;
-}
-.tab button{
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    background: rgb(255, 255, 255);
-    border-radius: 100px;
-    margin-right: 20px;
-    color: rgba(128, 128, 128, 0.68);
-    border: 1px solid #dedada;
-    box-shadow: 1px 2px 8px #aaaaaa;
-}
-.tab button:hover{
-    transform: scale(1.10);
-    transition: 500ms;
-    color: #09ecaa;
-    box-shadow: 5px 5px 10px #aaaaaa;
+.container1 .noidung2{
+    padding-top: 20px;
+    text-align: justify-all;
+    line-height: 30px;
 }
 
 .container2{
     width: 1500px;
     margin: 0 auto;
     padding-top: 50px;
-    height: 1500px;
+    height: 500px;
     position: relative;
 }
-.main1{
-    width: 49%;
-    float: left;
-    border-radius: 40px;
-    overflow: auto;
-}
-.main1 img{
-    height: 500px;
-    border-radius: 35px;
-
-}
-.main2{
-    width: 49%;
-    float: right;
-    border-radius: 40px;
-    overflow: auto;
-}
-.main2 img{
-    height: 500px;
-    border-radius: 35px;
-}
-.main3{
-    margin-top: 30px;
-    width: 100%;
-   border-radius: 30px;
-    float: left;
+.anhbl{
+    width: 1200px;
+    height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.main3 img{
-    width: 100%;
-    overflow: auto;
-    border-radius: 30px;
-    height: 600px;
-}
-.nd1{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 5px;
-    top: 70px;
-    color: #ffffff;
-    font-size: 40px;
-    font-family: 'Courgette', cursive;
-
-}
-.nd2{
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    right: 200px;
-    top: 70px;
-    color: #ffffff;
-    font-size: 40px;
-    font-family: 'Courgette', cursive;
-}
-.nd3{
-    width: 800px;
-    height: 300px;
-    position: absolute;
-    right: 350px;
-    bottom: 350px;
-    color: #ffffff;
-    font-size: 40px;
-    font-family: 'Courgette', cursive;
-}
 .free{
     width: 100%;
     float: left;
@@ -324,7 +190,7 @@ nav{
 }
 
 .container3{
-    width: 1200px; height: 1500px;
+    width: 1200px; height: 800px;
     margin: 50px auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.61);
 
@@ -369,12 +235,12 @@ nav{
 .goptc .anhchinh{
     width: 600px;
     height: 500px;
-   float: left;
+    float: left;
 }
 .lienket{
     width: 1500px;
     margin: 0 auto;
-    height: 300px;
+    height: 500px;
 }
 .lienket .brand{
     text-align: center;
@@ -467,52 +333,4 @@ nav{
 .theend .banquyen{
     width: 100%;
     font-family: Roboto, sans-serif;
-}
-.blog{
-    width: 100%;
-
-    float: left;
-    padding-left: 50px;
-    text-align: center;
-}
-.blog1 img{
-    height: 300px;
-    border-radius: 30px;
-}
-.blog1 img:hover{
-    transform: scale(0.99);
-    transition: 500ms;
-}
-.blog1 {
-    width: 350px;
-    float: left;
-    height: 500px;
-    margin-right: 30px;
-    overflow: auto;
-    font-family: 'Courgette', cursive;
-}
-.blog1 h1{
-    padding: 30px;
-}
-.blog .blogs{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 35px;
-    font-family: 'Courgette', cursive;
-}
-.blog1 button{
-    width: 150px;
-    border-radius: 20px;
-    background: rgb(255, 255, 255);
-}
-.blog1 button:hover{
-    transform: scale(1.03);
-    transition: 300ms;
-    background: rgba(9, 236, 170, 0.3);
-}
-.blog1 a{
-    font-weight: 500;
-    font-size: 20px;
-    color: #262323;
 }

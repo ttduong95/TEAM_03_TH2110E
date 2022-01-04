@@ -54,7 +54,11 @@ a{
 .part-two{
     background-color: bisque;
     width:1200px;
+
     margin: 150px auto;
+
+   margin: 150px auto;
+
     padding-left: 50px;
 }
 .box-one{
@@ -124,6 +128,7 @@ img{
     width:300px;
     padding-left:50px;
     padding-right:50px;
+
 }
 
 /*css rieng*/
@@ -208,3 +213,4 @@ td img {
     border: white solid;
     padding-top: 70px;
 }
+

@@ -25,7 +25,7 @@
 </header>
 <header class="header section">
     <div class="logo3">
-        <i class="fas fa-apple-alt"></i>
+       <a href="https://duongtt.herokuapp.com/"><i class="fas fa-apple-alt"></i></a>
         <h1 class="web" >GREEN VEGETABLE</h1>
     </div>
 
@@ -33,10 +33,10 @@
 <nav class="nav section">
     <div class="nav1">
 <ul class="menu">
-    <li><a href="#">Introduce</a> </li>
+    <li><a href="https://duongtt.herokuapp.com/">Home page</a> </li>
     <li><a href="#">Product</a> </li>
     <li><a href="#">Blog vegetable</a> </li>
-    <li><a href="#">Shop</a> </li>
+    <li><a href="https://duongtt.herokuapp.com/shoppingcenter.html">Shop</a> </li>
 </ul>
     <div class="logo2">
         <a href="#"> <i class="fab fa-facebook"></i></a>
@@ -60,27 +60,32 @@
         </div>
 </section>
 <section class="main section1">
+    <article>
         <div class="container1">
-            <p class="tieude">Best Sellers From The Fields</p>
+            <p class="tieude"><a href="https://duongtt.herokuapp.com/shoppingcenter.html">Best Sellers From The Fields</a> </p>
+            <div class="tab">
+                <button type="button" onclick="back()"><i class="fas fa-carrot"></i></button>
+                <button type="button" onclick="add()"><i class="fas fa-seedling"></i></button>
+            </div>
         <div class="anh1">
-            <img src="IMG/dautay.jpg">
-            <h1><a href="#">STRAWBERRY</a></h1>
-            <p><a href="#">$5</a></p>
+            <img id="add" src="IMG/dautay.jpg">
+            <h1 id="ten"><a href="#">STRAWBERRY</a></h1>
+            <p id="tien"><a href="#">$5</a></p>
         </div>
             <div class="anh1">
-                <img src="IMG/cherry.png">
-                <h1><a href="#">CHERRY</a></h1>
-                <p><a href="#">$10</a></p>
+                <img id="add1" src="IMG/nho-den.jpeg">
+                <h1 id="ten1"><a href="#">BLACK GRAPES</a></h1>
+                <p id="tien1" ><a href="#">$10</a></p>
             </div>
             <div class="anh1">
-                <img src="IMG/duahau.jpg">
-                <h1><a href="#">WATERMELON</a></h1>
-                <p><a href="#">$9</a></p>
+                <img id="add2" src="IMG/apple.jpeg">
+                <h1 id="ten2"><a href="#">APPLE</a></h1>
+                <p id="tien2"><a href="#">$9</a></p>
             </div>
             <div class="anh1">
-                <img src="IMG/mangcut.jpg">
-                <h1><a href="#">MANGOSTEEN</a></h1>
-                <p><a href="#">$8</a></p>
+                <img id="add3" src="IMG/banana.jpeg">
+                <h1 id="ten3" ><a href="#">MANGOSTEEN</a></h1>
+                <p id="tien3"><a href="#">$8</a></p>
             </div>
 
         </div>
@@ -149,6 +154,26 @@
                 <h1>04. 100% NATURAL</h1>
                 <p>Maximus, purus quis tincidunt semper, felis tellus mole stie nulla, in finibus erat magna et tortor phasellus a magna lobortis</p>
             </div>
+            </div>
+            <div class="blog">
+                <div class="blogs">
+                    <h1>Latest Post</h1>
+                </div>
+                <div class="blog1">
+                    <img src="IMG/Blog-tong-hop-hinh-anh-qua-cherry-dep-nhat_012227121.jpg">
+                    <h1>Lợi ích không thể bỏ qua của trái cây Cherry</h1>
+                    <button type="button"><a href="https://duongtt.herokuapp.com/Blog.html">See more</a></button>
+                </div>
+                <div class="blog1">
+                    <img src="IMG/Blog1_vietquat_1508844583963_indd.jpg">
+                    <h1>Việt Quất – Loại quả tuyệt vời cho sức khỏe</h1>
+                    <button type="button"><a href="https://duongtt.herokuapp.com/Blog1.html">See more</a></button>
+                </div>
+                <div class="blog1">
+                    <img src="IMG/blog2-hinh-nen-trai-cay-dep-7.jpg.crdownload">
+                    <h1>Bạn có biết rằng, ăn trái cây còn có tác dụng chữa bệnh???</h1>
+                    <button type="button"><a href="https://duongtt.herokuapp.com/Blog2.html">See more</a></button>
+                </div>
             </div>
         </div>
     </aside>
@@ -257,6 +282,42 @@
         document.getElementById("next4").src=nexts[parseInt(Math.random()*10)];
     }
     setInterval(next,3000);
+    var add=function (){
+        document.getElementById("add").src="IMG/sup-lo.jpeg";
+        document.getElementById("ten").innerHTML="<a href=\"#\">CAULIFLOWER</a>";
+        document.getElementById("tien").innerHTML="<a href=\"#\">$8</a>";
+
+        document.getElementById("add1").src="IMG/bap-cai.jpeg";
+        document.getElementById("ten1").innerHTML="<a href=\"#\">CABBAGE</a>";
+        document.getElementById("tien1").innerHTML="<a href=\"#\">$5</a>";
+
+        document.getElementById("add2").src="IMG/tomatoo.jpeg";
+        document.getElementById("ten2").innerHTML="<a href=\"#\">TRIAL</a>";
+        document.getElementById("tien2").innerHTML="<a href=\"#\">$3</a>";
+
+        document.getElementById("add3").src="IMG/vege1.jpg";
+        document.getElementById("ten3").innerHTML="<a href=\"#\">CAULIFLOWER</a>";
+        document.getElementById("tien3").innerHTML="<a href=\"#\">$2</a>";
+
+    }
+    var back=function (){
+        var x=document.getElementById("add");
+        x.src="IMG/dautay.jpg";
+        document.getElementById("ten").innerHTML="<a href=\"#\">STRAWBERRY</a>";
+        document.getElementById("tien1").innerHTML="<a href=\"#\">$5</a>";
+        document.getElementById("add1").src="IMG/nho-den.jpeg";
+        document.getElementById("ten1").innerHTML="<a href=\"#\">BLACK GRAPES</a>";
+        document.getElementById("tien1").innerHTML="<a href=\"#\">$10</a>";
+
+        document.getElementById("add2").src="IMG/apple.jpeg";
+        document.getElementById("ten2").innerHTML="<a href=\"#\">APPLE</a>";
+        document.getElementById("tien2").innerHTML="<a href=\"#\">$9</a>";
+
+        document.getElementById("add3").src="IMG/banana.jpeg";
+        document.getElementById("ten3").innerHTML="<a href=\"#\">BANANA</a>";
+        document.getElementById("tien3").innerHTML="<a href=\"#\">$8</a>";
+    }
+
 </script>
 </body>
 </html>
