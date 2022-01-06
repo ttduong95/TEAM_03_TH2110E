@@ -45,6 +45,25 @@
 <section class="part-one">
     <div class="text">Discover Our Products</div>
     <div class="small-text">At vero eos et accusamus et  ducimus qui blanditiis praesentium.</div>
+    <div class="giohang">
+        <a href="https://duongtt.herokuapp.com/giohang.html" class="fas fa-shopping-basket" onmouseenter="showcart()" onmouseleave="showcart()"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart">
+        <table>
+            <tr>
+                <th>Number</th>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total(VNĐ)</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+        </table>
+
+    </div>
     <div class="icon-menu">
         <ul class="ul1">
             <li id="one" class="li1" onclick="ClickFruit()">
@@ -77,14 +96,15 @@
         <div class="info">
             <div class="product-name">Green Grape</div>
             <div class="price">
-                <div class="cost">$14.55</div>
+                <div class="cost">14550</div>
                 <div class="order">
-                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
                     <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                     <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                 </div>
             </div>
         </div>
+        <button class="fas fa-shopping-basket" onclick="themvaogiohang(this)" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></button>
     </div>
     <div class="box-one" onmouseenter="EnterBox1(this)" onmouseleave="LeaveBox1(this)">
         <div class="image">
@@ -93,14 +113,15 @@
         <div class="info">
             <div class="product-name">Black Grape</div>
             <div class="price">
-                <div class="cost">$15.55</div>
+                <div class="cost">15550</div>
                 <div class="order">
-                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
                     <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                     <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                 </div>
             </div>
         </div>
+        <button class="fas fa-shopping-basket" onclick="themvaogiohang(this)" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></button>
     </div>
     <div class="box-one" onmouseenter="EnterBox2(this)" onmouseleave="LeaveBox2(this)">
         <div class="image">
@@ -109,14 +130,16 @@
         <div class="info">
             <div class="product-name">Fresh Apple</div>
             <div class="price">
-                <div class="cost">$16.55</div>
+                <div class="cost">16550</div>
                 <div class="order">
-                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+
                     <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                     <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                 </div>
             </div>
         </div>
+        <button class="fas fa-shopping-basket" onclick="themvaogiohang(this)" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></button>
     </div>
     <div class="box-one" onmouseenter="EnterBox3(this)" onmouseleave="LeaveBox3(this)">
         <div class="image">
@@ -125,46 +148,49 @@
         <div class="info">
             <div class="product-name">Tropical Kiwi</div>
             <div class="price">
-                <div class="cost">$14.55</div>
+                <div class="cost">14550</div>
                 <div class="order">
-                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
                     <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                     <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                 </div>
             </div>
         </div>
+        <button class="fas fa-shopping-basket" onclick="themvaogiohang(this)" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></button>
     </div>
     <div class="box-one" onmouseenter="EnterBox4(this)" onmouseleave="LeaveBox4(this)">
         <div class="image">
-            <img src="IMG/lemon.jpeg" width="120" height="120"/>
+            <img src="IMG/lemon.jpeg" width="110" height="120"/>
         </div>
         <div class="info">
             <div class="product-name">Yellow Lemon</div>
             <div class="price">
-                <div class="cost">$15.55</div>
+                <div class="cost">15550</div>
                 <div class="order">
-                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
                     <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                     <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                 </div>
             </div>
         </div>
+        <button class="fas fa-shopping-basket" onclick="themvaogiohang(this)" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></button>
     </div>
     <div class="box-one" onmouseenter="EnterBox5(this)" onmouseleave="LeaveBox5(this)">
         <div class="image">
-            <img src="IMG/banana.jpeg" width="120" height="120"/>
+            <img src="IMG/banana.jpeg" width="90" height="120"/>
         </div>
         <div class="info">
             <div class="product-name">Tropical Banana</div>
             <div class="price">
-                <div class="cost">$19.55</div>
+                <div class="cost">19550</div>
                 <div class="order">
-                    <span class="fas fa-shopping-basket" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
                     <span class="fas fa-info-circle" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                     <span class="far fa-comments" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></span>
                 </div>
             </div>
         </div>
+        <button class="fas fa-shopping-basket" onclick="themvaogiohang(this)" onmouseenter="ChangeColor1(this)" onmouseleave="RemoveColor1(this)"></button>
     </div>
 </section>
 <section class="part-three">
@@ -178,6 +204,7 @@
         <div><img src="IMG/dis3.png" width="370" height="270"/></div>
     </div>
 </section>
+<script type="text/javascript" src="js/giohang.js"></script>
 </body>
 <script type="text/javascript">
     function ChangeColor1(e){
@@ -270,14 +297,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Tomato Juice</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"cost\">14550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox1(this)\" onmouseleave=\"LeaveBox1(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -286,14 +314,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Orange Juice</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"cost\">15550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox2(this)\" onmouseleave=\"LeaveBox2(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -302,14 +331,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Apple Juice</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$16.55</div>\n" +
+            "                <div class=\"cost\">16550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox3(this)\" onmouseleave=\"LeaveBox3(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -318,14 +348,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Spiced-pear</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"cost\">14550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox4(this)\" onmouseleave=\"LeaveBox4(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -334,14 +365,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Extra Jam</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"cost\">15550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox5(this)\" onmouseleave=\"LeaveBox5(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -350,14 +382,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Snapple Apple</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$19.55</div>\n" +
+            "                <div class=\"cost\">19550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n";
     }
     function ClickVegetable(){
@@ -369,14 +402,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Broccoli</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"cost\">14550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox1(this)\" onmouseleave=\"LeaveBox1(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -385,14 +419,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Cabbage</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"cost\">15550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox2(this)\" onmouseleave=\"LeaveBox2(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -401,14 +436,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Green Bean</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$16.55</div>\n" +
+            "                <div class=\"cost\">16550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox3(this)\" onmouseleave=\"LeaveBox3(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -417,14 +453,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Wax Gourd</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"cost\">14550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox4(this)\" onmouseleave=\"LeaveBox4(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -433,14 +470,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Strawberry</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"cost\">15550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox5(this)\" onmouseleave=\"LeaveBox5(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -449,14 +487,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Tomato</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$19.55</div>\n" +
+            "                <div class=\"cost\">19550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n";
     }
     function ClickFruit(){
@@ -467,14 +506,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Green Grape</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"cost\">14550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox1(this)\" onmouseleave=\"LeaveBox1(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -483,14 +523,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Black Grape</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"cost\">15550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox2(this)\" onmouseleave=\"LeaveBox2(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -499,14 +540,15 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Fresh Apple</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$16.55</div>\n" +
+            "                <div class=\"cost\">16550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox3(this)\" onmouseleave=\"LeaveBox3(this)\">\n" +
             "        <div class=\"image\">\n" +
@@ -515,46 +557,49 @@
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Tropical Kiwi</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$14.55</div>\n" +
+            "                <div class=\"cost\">14550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox4(this)\" onmouseleave=\"LeaveBox4(this)\">\n" +
             "        <div class=\"image\">\n" +
-            "            <img src=\"IMG/lemon.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "            <img src=\"IMG/lemon.jpeg\" width=\"110\" height=\"120\"/>\n" +
             "        </div>\n" +
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Yellow Lemon</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$15.55</div>\n" +
+            "                <div class=\"cost\">15550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>\n" +
             "    <div class=\"box-one\" onmouseenter=\"EnterBox5(this)\" onmouseleave=\"LeaveBox5(this)\">\n" +
             "        <div class=\"image\">\n" +
-            "            <img src=\"IMG/banana.jpeg\" width=\"120\" height=\"120\"/>\n" +
+            "            <img src=\"IMG/banana.jpeg\" width=\"90\" height=\"120\"/>\n" +
             "        </div>\n" +
             "        <div class=\"info\">\n" +
             "            <div class=\"product-name\">Tropical Banana</div>\n" +
             "            <div class=\"price\">\n" +
-            "                <div class=\"cost\">$19.55</div>\n" +
+            "                <div class=\"cost\">19550</div>\n" +
             "                <div class=\"order\">\n" +
-            "                    <span class=\"fas fa-shopping-basket\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
+            "                    <input type=\"number\" name=\"soluong\" min=\"1\" max=\"10\" value=\"1\">\n" +
             "                    <span class=\"fas fa-info-circle\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                    <span class=\"far fa-comments\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></span>\n" +
             "                </div>\n" +
             "            </div>\n" +
             "        </div>\n" +
+            "       <button class=\"fas fa-shopping-basket\" onclick=\"themvaogiohang(this)\" onmouseenter=\"ChangeColor1(this)\" onmouseleave=\"RemoveColor1(this)\"></button>\n" +
             "    </div>";
     }
 </script>

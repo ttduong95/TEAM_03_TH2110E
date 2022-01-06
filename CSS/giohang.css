@@ -30,7 +30,6 @@ p{
     padding: 0;
 
 }
-
 .section1{
     width: 1500px;
     margin: 0 auto;
@@ -55,7 +54,7 @@ p{
 
 }
 
-.logo3{
+.logo3 {
     float: none;
     text-align: center;
     color: #0d800f;
@@ -65,10 +64,9 @@ p{
     color: #67e39e;
     font-size: 70px;
 }
-
 .web{
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 800;
     font-family: 'Courgette', cursive;
 
 
@@ -146,13 +144,13 @@ nav{
     font-family: 'Courgette', cursive;
 }
 .container1{
+    float: none;
     width: 1200px;
+    height: 1500px;
     position: relative;
     margin: 50px auto;
     padding-left: 20px;
-    height: 700px;
     border-bottom: 1px solid #e8e2c8;
-
 
 }
 .anh1{
@@ -176,7 +174,7 @@ nav{
 }
 
 .anh1 a{
- font-size: 25px;
+    font-size: 25px;
     color: #226303;
 
 }
@@ -189,35 +187,16 @@ nav{
 .container1 .tieude{
     text-align: center;
     padding-bottom: 30px;
-
-}
-.tieude a{
-    font-size: 37px;
+    font-size: 35px;
     font-weight: 800;
     font-family: 'Courgette', cursive;
 }
-.container1 .tab{
-    width: 100%;
-    text-align: center;
+#add{
+    display: none;
 }
-.tab button{
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    background: rgb(255, 255, 255);
-    border-radius: 100px;
-    margin-right: 20px;
-    color: rgba(128, 128, 128, 0.68);
-    border: 1px solid #dedada;
-    box-shadow: 1px 2px 8px #aaaaaa;
+.container1.active .add{
+    display: block;
 }
-.tab button:hover{
-    transform: scale(1.10);
-    transition: 500ms;
-    color: #09ecaa;
-    box-shadow: 5px 5px 10px #aaaaaa;
-}
-
 .container2{
     width: 1500px;
     margin: 0 auto;
@@ -230,6 +209,7 @@ nav{
     float: left;
     border-radius: 40px;
     overflow: auto;
+    box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
 }
 .main1 img{
     height: 500px;
@@ -241,6 +221,7 @@ nav{
     float: right;
     border-radius: 40px;
     overflow: auto;
+    box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
 }
 .main2 img{
     height: 500px;
@@ -249,8 +230,9 @@ nav{
 .main3{
     margin-top: 30px;
     width: 100%;
-   border-radius: 30px;
+    border-radius: 30px;
     float: left;
+    box-shadow: 15px 15px 12px rgba(128, 128, 128, 0.68);
 }
 
 .main3 img{
@@ -324,7 +306,7 @@ nav{
 }
 
 .container3{
-    width: 1200px; height: 1500px;
+    width: 1200px; height: 800px;
     margin: 50px auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.61);
 
@@ -369,12 +351,12 @@ nav{
 .goptc .anhchinh{
     width: 600px;
     height: 500px;
-   float: left;
+    float: left;
 }
 .lienket{
     width: 1500px;
     margin: 0 auto;
-    height: 300px;
+    height: 500px;
 }
 .lienket .brand{
     text-align: center;
@@ -468,51 +450,104 @@ nav{
     width: 100%;
     font-family: Roboto, sans-serif;
 }
-.blog{
-    width: 100%;
 
+
+
+/*css rieng --------------------------------------------*/
+
+.boxcenter {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.row {
     float: left;
-    padding-left: 50px;
-    text-align: center;
-}
-.blog1 img{
-    height: 300px;
-    border-radius: 30px;
-}
-.blog1 img:hover{
-    transform: scale(0.99);
-    transition: 500ms;
-}
-.blog1 {
-    width: 350px;
-    float: left;
-    height: 500px;
-    margin-right: 30px;
-    overflow: auto;
-    font-family: 'Courgette', cursive;
-}
-.blog1 h1{
-    padding: 30px;
-}
-.blog .blogs{
     width: 100%;
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 35px;
-    font-family: 'Courgette', cursive;
 }
-.blog1 button{
-    width: 150px;
-    border-radius: 20px;
-    background: rgb(255, 255, 255);
-}
-.blog1 button:hover{
-    transform: scale(1.03);
-    transition: 300ms;
-    background: rgba(9, 236, 170, 0.3);
-}
-.blog1 a{
-    font-weight: 500;
+.row h1{
     font-size: 20px;
-    color: #262323;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
+.mb {
+    margin-bottom: 20px;
+}
+.mr {
+    margin-right: 2%;
+}
+.boxtrai {
+    float: left;
+    width: 100%;
+}
+
+
+
+/* giỏ hàng */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #999;
+    padding: 10px;
+    font-size: 16px;
+}
+td {
+    border: 1px #CCC solid;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+td div {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    text-align: right;
+    font-size: 16px;
+}
+
+th div {
+    width: calc(100% - 10px);
+    padding: 0 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+}
+
+/* thong tin nhận hàng */
+
+.thongtinnhanhang tr td {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.thongtinnhanhang input {
+    width: 100%;
+    height: 30px;
+    border: 1px #CCC solid;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.dongy {
+    width: 180px;
+    border: 1px #226303 solid;
+    background-image: linear-gradient(#226303, #226303);
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.dongy:hover {
+    background-image: linear-gradient(#F30, #000);
+}
+
